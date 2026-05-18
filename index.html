@@ -4,9 +4,10 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>2026 HRWA Sponsorship — Online Form</title>
-<!-- Square Web Payments SDK — SANDBOX (testing). Switch back to production before going live. -->
-<!-- <script src="https://web.squarecdn.com/v1/square.js"></script> -->
-<script src="https://sandbox.web.squarecdn.com/v1/square.js"></script>
+<!-- Square Web Payments SDK — PRODUCTION. -->
+<script src="https://web.squarecdn.com/v1/square.js"></script>
+<!-- For sandbox testing, comment the line above and uncomment: -->
+<!-- <script src="https://sandbox.web.squarecdn.com/v1/square.js"></script> -->
 <style>
   /* ============================================================
      HRWA SPONSORSHIP FORM — EMBEDDED CARD VERSION
@@ -522,12 +523,12 @@
    ============================================================ */
 
 // 1) SQUARE APPLICATION ID — from Square Developer Dashboard > Credentials.
-//    Currently SANDBOX. Swap to production Application ID before going live.
-const SQUARE_APPLICATION_ID = "sandbox-sq0idb-iywoOUO9Evwcuc4HDCn61g";
+//    Currently PRODUCTION. To revert to sandbox, change to the sandbox-sq0idb-... ID.
+const SQUARE_APPLICATION_ID = "sq0idp-s4XGf9ETIEtfM_NsNtW-wA";
 
 // 2) SQUARE LOCATION ID — from Square Developer Dashboard > Locations.
-//    Currently SANDBOX. Swap to production Location ID before going live.
-const SQUARE_LOCATION_ID = "LPEYYD47JTNHA";
+//    Currently PRODUCTION. To revert to sandbox, change to the sandbox L... ID.
+const SQUARE_LOCATION_ID = "LR6KJV8XGDXGY";
 
 // 3) RAILWAY BACKEND URL — your deployed payment processor's create-payment endpoint.
 const PAYMENT_BACKEND_URL = "https://hrwa-payments-backend-production.up.railway.app/create-payment";
